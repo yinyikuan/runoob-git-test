@@ -22,8 +22,8 @@
     <input type="text" name="userPassword" value="${user.userPassword}">
     <input type="radio" name="gender" value="1" <c:if test="${user.gender=='1'}">checked="checked"</c:if>>男
     <input type="radio" name="gender" value="2" <c:if test="${user.gender=='2'}">checked="checked"</c:if>>女
-    <input type="date" name="birthday" value="<f:formatDate value="${user.birthday}" pattern="yyyy-MM-dd"/>">
-    <input type="submit" value="提交">
+    <input type="date" name="birthday" value="<f:formatDate value="${user.birthday}" pattern="yyyy-MM-dd"/>"><%--
+    <input type="submit" value="提交">--%>
 </form>
 </body>
 </html>
